@@ -9,7 +9,7 @@ import { ThemedView } from '@/components/themed-view';
 import { IconSymbol } from '@/components/ui/icon-symbol';
 import { Fonts } from '@/constants/theme';
 
-export default function TabTwoScreen() {
+export default function ExploreScreen() {
   return (
     <ParallaxScrollView
       headerBackgroundColor={{ light: '#D0D0D0', dark: '#353636' }}
@@ -33,13 +33,13 @@ export default function TabTwoScreen() {
       <ThemedText>This app includes example code to help you get started.</ThemedText>
       <Collapsible title="File-based routing">
         <ThemedText>
-          This app has two screens:{' '}
-          <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> and{' '}
-          <ThemedText type="defaultSemiBold">app/(tabs)/explore.tsx</ThemedText>
+          This app has multiple screens:{' '}
+          <ThemedText type="defaultSemiBold">app/index.tsx</ThemedText> and{' '}
+          <ThemedText type="defaultSemiBold">app/explore.tsx</ThemedText>
         </ThemedText>
         <ThemedText>
-          The layout file in <ThemedText type="defaultSemiBold">app/(tabs)/_layout.tsx</ThemedText>{' '}
-          sets up the tab navigator.
+          The layout file in <ThemedText type="defaultSemiBold">app/_layout.tsx</ThemedText>{' '}
+          sets up the stack navigator.
         </ThemedText>
         <ExternalLink href="https://docs.expo.dev/router/introduction">
           <ThemedText type="link">Learn more</ThemedText>
@@ -110,3 +110,4 @@ const styles = StyleSheet.create({
     gap: 8,
   },
 });
+

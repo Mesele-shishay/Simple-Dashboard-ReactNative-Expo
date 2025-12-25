@@ -63,3 +63,4 @@ const dashboardConfig = {
 export default function HomeScreen() {
   return <HomeDashboard config={dashboardConfig} />;
 }
+
