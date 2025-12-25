@@ -7,12 +7,11 @@ import ParallaxScrollView from '@/components/parallax-scroll-view';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { IconSymbol } from '@/components/ui/icon-symbol';
-import { Fonts } from '@/constants/theme';
 
 export default function ExploreScreen() {
   return (
     <ParallaxScrollView
-      headerBackgroundColor={{ light: '#D0D0D0', dark: '#353636' }}
+      headerBackgroundColor="#D0D0D0"
       headerImage={
         <IconSymbol
           size={310}
@@ -22,11 +21,7 @@ export default function ExploreScreen() {
         />
       }>
       <ThemedView style={styles.titleContainer}>
-        <ThemedText
-          type="title"
-          style={{
-            fontFamily: Fonts.rounded,
-          }}>
+        <ThemedText type="title">
           Explore
         </ThemedText>
       </ThemedView>
@@ -80,7 +75,7 @@ export default function ExploreScreen() {
           This template includes an example of an animated component. The{' '}
           <ThemedText type="defaultSemiBold">components/HelloWave.tsx</ThemedText> component uses
           the powerful{' '}
-          <ThemedText type="defaultSemiBold" style={{ fontFamily: Fonts.mono }}>
+          <ThemedText type="defaultSemiBold">
             react-native-reanimated
           </ThemedText>{' '}
           library to create a waving hand animation.
