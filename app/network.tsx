@@ -1,10 +1,10 @@
-import { ThemedText } from '@/components/themed-text';
-import MaterialIcons from '@expo/vector-icons/MaterialIcons';
-import { useRouter } from 'expo-router';
 import React from 'react';
-import { ScrollView, StyleSheet, TouchableOpacity, View } from 'react-native';
+import { StyleSheet, View, ScrollView, TouchableOpacity } from 'react-native';
+import { useRouter } from 'expo-router';
+import MaterialIcons from '@expo/vector-icons/MaterialIcons';
+import { ThemedText } from '@/components/themed-text';
 
-export default function BankingScreen() {
+export default function NetworkScreen() {
   const router = useRouter();
 
   return (
@@ -18,7 +18,7 @@ export default function BankingScreen() {
         >
           <MaterialIcons name="arrow-back" size={24} color="#FFFFFF" />
         </TouchableOpacity>
-        <ThemedText style={styles.headerTitle}>Banking</ThemedText>
+        <ThemedText style={styles.headerTitle}>Network</ThemedText>
         <View style={styles.headerSpacer} />
       </View>
 
@@ -27,12 +27,12 @@ export default function BankingScreen() {
         <View style={styles.contentContainer}>
           <View style={styles.iconContainer}>
             <View style={[styles.icon, { backgroundColor: '#673AB7' }]}>
-              <MaterialIcons name="attach-money" size={40} color="#FFFFFF" />
+              <MaterialIcons name="wifi" size={40} color="#FFFFFF" />
             </View>
           </View>
-          <ThemedText type="title" style={styles.title}>Banking</ThemedText>
+          <ThemedText type="title" style={styles.title}>Network</ThemedText>
           <ThemedText style={styles.description}>
-            Check your bank activities and manage your finances here.
+            Manage network settings and connections. View your network status and configure connectivity options.
           </ThemedText>
         </View>
       </ScrollView>
@@ -118,3 +118,4 @@ const styles = StyleSheet.create({
     maxWidth: 300,
   },
 });
+

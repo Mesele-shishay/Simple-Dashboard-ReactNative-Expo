@@ -24,7 +24,7 @@ export default function LoginScreen() {
     if (!email.trim() || !password.trim()) {
       return;
     }
-    router.replace('/dashboard');
+    router.replace('/');
   };
 
   return (

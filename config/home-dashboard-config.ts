@@ -46,10 +46,10 @@ export const dashboardConfig = {
       "row": [
         {
           "type": "card",
-          "title": "Add",
+          "title": "Network",
           "icon": "wifi",
           "iconColor": "#673AB7",
-          "description": "Check your bank activities",
+          "description": "Manage network settings and connections",
           "fullWidth": true
         }
       ]

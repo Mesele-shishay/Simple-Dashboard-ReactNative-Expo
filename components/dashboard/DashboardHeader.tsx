@@ -1,7 +1,7 @@
+import type { DashboardHeader as DashboardHeaderType } from '@/types/dashboard';
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { ThemedText } from '../themed-text';
-import type { DashboardHeader as DashboardHeaderType } from '@/types/dashboard';
 
 interface DashboardHeaderProps {
   header: DashboardHeaderType;

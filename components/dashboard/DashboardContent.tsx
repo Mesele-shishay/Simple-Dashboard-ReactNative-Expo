@@ -1,7 +1,7 @@
+import type { DashboardRow as DashboardRowType } from '@/types/dashboard';
 import React from 'react';
 import { Dimensions, ScrollView, StyleSheet, View } from 'react-native';
 import { DashboardRow } from './DashboardRow';
-import type { DashboardRow as DashboardRowType } from '@/types/dashboard';
 
 interface DashboardContentProps {
   content: DashboardRowType[];

@@ -1,10 +1,10 @@
+import { ICON_MAPPING } from '@/constants/dashboard';
+import type { DashboardCard as DashboardCardType } from '@/types/dashboard';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import { useRouter } from 'expo-router';
 import React from 'react';
 import { Dimensions, StyleSheet, TouchableOpacity, View } from 'react-native';
 import { ThemedText } from '../themed-text';
-import { ICON_MAPPING } from '@/constants/dashboard';
-import type { DashboardCard as DashboardCardType } from '@/types/dashboard';
 
 interface DashboardCardProps {
   card: DashboardCardType;

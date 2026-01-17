@@ -7,12 +7,12 @@ export default function RootLayout() {
     <>
       <Stack>
         <Stack.Screen name="index" options={{ headerShown: false }} />
-        <Stack.Screen name="explore" options={{ headerShown: false }} />
+        <Stack.Screen name="dashboard" options={{ headerShown: false }} />
         <Stack.Screen name="banking" options={{ headerShown: false }} />
         <Stack.Screen name="ideas" options={{ headerShown: false }} />
         <Stack.Screen name="add" options={{ headerShown: false }} />
         <Stack.Screen name="links" options={{ headerShown: false }} />
-        <Stack.Screen name="modal" options={{ presentation: 'modal', title: 'Modal' }} />
+        <Stack.Screen name="network" options={{ headerShown: false }} />
       </Stack>
       <StatusBar style="auto" />
     </>
